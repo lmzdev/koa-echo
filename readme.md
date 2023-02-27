@@ -1,4 +1,5 @@
 # koa-echo
+[![Node.js Build](https://github.com/lmzdev/koa-echo/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/lmzdev/koa-echo/actions/workflows/node.js.yml)
 
 Koa Middleware for debugging and mockup purposes.
 Mirrors the ```ctx``` Object as response body and adds a ```X-Response-Time```-Header.
