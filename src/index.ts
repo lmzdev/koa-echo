@@ -28,6 +28,6 @@ export function echo() {
         ctx.status = 200
         ctx.set('Content-Type', 'application/json')
         ctx.set('Server', `node/${process.version}`)
-        ctx.set('X-Reponse-Time', `${since(then)}ms`)
+        ctx.set('X-Response-Time', `${since(then)}ms`)
     }
 }

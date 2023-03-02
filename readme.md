@@ -33,7 +33,7 @@ curl --head "localhost:3333" && curl -s "localhost:3333" | jq
 HTTP/1.1 200 OK
 Content-Type: application/json
 Server: node/v18.13.0
-X-Reponse-Time: 0.13ms
+X-Response-Time: 0.13ms
 Content-Length: 183
 Connection: keep-alive
 Keep-Alive: timeout=5
