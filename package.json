@@ -1,6 +1,6 @@
 {
   "name": "koa-echo",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Koa Middleware for debugging and mockup purposes.",
   "main": "./lib/cjs/index.js",
   "types": "./lib/index.d.ts",
@@ -8,6 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -r ./lib/*",
     "build": "eslint src && tsc -p tsconfig-es.json && tsc -p tsconfig-cjs.json && npm run esm ",
+    "lint": "eslint src --ext .ts,.js",
     "esm": "cd ./lib/mjs/ && mv index.js index.mjs"
   },
   "repository": {
