@@ -2,7 +2,7 @@
 [![Node.js Build](https://github.com/lmzdev/koa-echo/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/lmzdev/koa-echo/actions/workflows/node.js.yml)
 
 Koa Middleware for debugging and mockup purposes.
-Mirrors the ```ctx``` Object as response body, including ```ctx.params``` (@koa/router), ```ctx.query``` and ```ctx.request.body``` and adds a ```X-Response-Time```-Header.
+Mirrors the ```ctx``` Object as response body, including ```ctx.params``` (when used with [@koa/router](https://www.npmjs.com/package/koa-router)), ```ctx.query``` and ```ctx.request.body``` and adds a ```X-Response-Time```-Header.
 
 ## Installation
 ```sh
