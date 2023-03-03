@@ -11,7 +11,7 @@ npm install koa-echo
 
 ## Usage
 
-```ts
+```js
 import Koa from 'koa'
 import { echo } from 'koa-echo'
 
@@ -20,12 +20,13 @@ const port = 3333
 
 app
 .use(echo())
+.use((ctx) => ctx.status = 204)
 .listen(port, () => console.log(`Listening on :${port}`))
 
 ```
 
-## Example
-```ss
+## Example Request
+```sh
 curl --head "localhost:3333" && curl -s "localhost:3333" | jq
 ```
 
@@ -34,7 +35,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 Server: node/v18.13.0
 X-Response-Time: 0.13ms
-Content-Length: 183
+Content-Length: 184
 Connection: keep-alive
 Keep-Alive: timeout=5
 ```
@@ -53,8 +54,8 @@ Keep-Alive: timeout=5
     },
     "query": {},
     "response": {
-      "status": 404,
-      "message": "Not Found"
+      "status": 204,
+      "message": "No Content"
     }
   }
 }
