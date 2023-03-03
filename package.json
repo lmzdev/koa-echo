@@ -1,7 +1,7 @@
 {
   "name": "koa-echo",
-  "version": "1.0.7",
-  "description": "Koa Middleware for debugging and mockup purposes.",
+  "version": "1.0.8",
+  "description": "Koa Middleware for debugging and mockup purposes",
   "main": "./lib/cjs/index.js",
   "types": "./lib/index.d.ts",
   "scripts": {
@@ -20,7 +20,8 @@
     "koa",
     "debug",
     "x-response-time",
-    "middleware"
+    "middleware",
+    "mirror"
   ],
   "author": "",
   "license": "MIT",
